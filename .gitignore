@@ -5,3 +5,4 @@
 *.env
 /rclone/config/rclone.conf
 
+"mutagen-agents.tar.gz" 
