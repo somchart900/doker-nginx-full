@@ -1,0 +1,7 @@
+# ไม่เก็บไฟล์ล็อกทั้งหมด
+*.log
+
+# ไม่เก็บไฟล์ env
+*.env
+/rclone/config/rclone.conf
+

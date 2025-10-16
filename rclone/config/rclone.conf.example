@@ -1,0 +1,10 @@
+[gdrive]
+type = drive
+client_id = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com
+client_secret =xxxxxxxxxxxxxxxxxxxxxxxxxxx
+scope = drive
+metadata_owner = read,write
+token = {"access_token":"xxx","token_type":"Bearer","refresh_token":"xxx","expiry":"2025-10-15T08:41:27.17405003Z","expires_in":3599}
+team_drive = 
+root_folder_id = 
+

@@ -1,0 +1,17 @@
+services:
+  rclone:
+    image: rclone/rclone:latest
+    container_name: rclone_gdrive
+    #restart: unless-stopped
+    volumes:
+      - ./rclone/config:/config/rclone
+      - ./backup:/data
+    entrypoint: [ "rclone" ]
+    command: [ "sync", "/data", "gdrive:backup", "--progress", "--delete-during" ]
+    cap_add:
+      - SYS_ADMIN
+    devices:
+      - /dev/fuse
+    security_opt:
+      - apparmor:unconfined
+
