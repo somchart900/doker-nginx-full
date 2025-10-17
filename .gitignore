@@ -4,5 +4,7 @@
 # ไม่เก็บไฟล์ env
 *.env
 /rclone/config/rclone.conf
-
+mutagen.exe
+mutagen.yml.lock
+mutagen-agents.tar.gz
 

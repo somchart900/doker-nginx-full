@@ -1,0 +1,15 @@
+sync:
+  defaults:
+    mode: "two-way-resolved"
+    ignore:
+      vcs: true
+  nginx:
+    alpha: "./project"
+    beta: "docker://php-fpm/var/www/html"
+    configurationBeta:
+      permissions:
+        defaultOwner: "www-data"
+        defaultGroup: "www-data"
+        defaultFileMode: 0644
+        defaultDirectoryMode: 0755
+

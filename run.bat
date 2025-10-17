@@ -15,6 +15,7 @@ exit
 
 :dev
 docker compose -f dev.yml up -d
+mutagen.exe project start
 echo .
 echo .
 echo .
@@ -23,10 +24,15 @@ echo Press any key to stop dev containers...
 echo .
 echo .
 pause
+docker compose -f dev.yml down
+mutagen.exe project terminate 
+mutagen daemon stop
+taskkill /F /IM mutagen.exe
 exit
 
 :prod
 docker compose -f production.yml up -d
+mutagen.exe project start
 echo .
 echo .
 echo .
@@ -36,5 +42,7 @@ echo .
 echo .
 pause
 docker compose -f production.yml down
-
+mutagen.exe project terminate 
+mutagen daemon stop
+taskkill /F /IM mutagen.exe
 exit
