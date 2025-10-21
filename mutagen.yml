@@ -3,7 +3,7 @@ sync:
     mode: "two-way-resolved"
     ignore:
       vcs: true
-  nginx:
+  php-fpm:
     alpha: "./project"
     beta: "docker://php-fpm/var/www/html"
     configurationBeta:

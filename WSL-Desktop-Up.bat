@@ -41,7 +41,7 @@ echo Press any key to stop production containers...
 echo .
 echo .
 pause
-docker compose -f production.yml down
+compose -f production.yml down
 mutagen.exe project terminate 
 mutagen daemon stop
 taskkill /F /IM mutagen.exe
